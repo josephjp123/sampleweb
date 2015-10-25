@@ -18,12 +18,12 @@
   
   <servlet>
         <servlet-name>calc</servlet-name>
-        <jsp-file>/main/calc.jsp</jsp-file>
+        <jsp-file>/samplemsweb/calc.jsp</jsp-file>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>calc</servlet-name>
-        <url-pattern>/calc.jsp</url-pattern>
+        <url-pattern>/samplemsweb/calc.jsp</url-pattern>
     </servlet-mapping>
   
 </web-app>
