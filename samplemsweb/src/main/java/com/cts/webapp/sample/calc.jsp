@@ -1,12 +1,21 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>;
- 
-Insert title here
- 
-<form action="Calculator" method="POST"><input name="value" type="text" /><input name="plus" type="submit" value="+" />
-<input name="minus" type="submit" value="-" />
-<input name="divide" type="submit" value="/" />
-<input name="multiply" type="submit" value="*" /><input name="result" readonly="readonly" type="text" value="" />";
- 
-</form>
 
-
+<html>
+        <body>
+                <form method="get" action="./CalculateServlet">
+                        Number 1 : <input type="text" name="no1"> <br>
+                        Number 2 : <input type="text" name="no2"> <br> 
+                        Operator : 
+                        
+                        <select name="opt">
+                                <option value="p"> + </option>
+                                <option value="m"> - </option>
+                                <option value="mul"> * </option>
+                                <option value="d"> / </option>
+                                                                                                                                
+                        </select>
+                                
+                        <br>
+                        <input type="submit" value="Go">
+                </form>
+        </body>
+</html>
