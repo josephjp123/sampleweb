@@ -15,4 +15,15 @@
     <servlet-name>HelloWorldServlet</servlet-name>
     <url-pattern>/hello-world</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>calc</servlet-name>
+        <jsp-file>/sample/calc.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>calc</servlet-name>
+        <url-pattern>calc.jsp</url-pattern>
+    </servlet-mapping>
+  
 </web-app>
