@@ -23,72 +23,75 @@ package com.cts.webapp.sample;
 //		out.close();	}
 //}
 
+
+//calculator start
 //package de.duckout.servlet;
-import java.io.IOException;
-import java.util.Map;
+//import java.io.IOException;
+//import java.util.Map;
  
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
+//import javax.servlet.RequestDispatcher;
+//import javax.servlet.ServletException;
 //import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+//import javax.servlet.http.HttpServlet;
+//import javax.servlet.http.HttpServletRequest;
+//import javax.servlet.http.HttpServletResponse;
  
 /**
 * Servlet implementation class Calculator
 */
 //@WebServlet("/HelloWorldServlet")
-public class HelloWorldServlet extends HttpServlet {
-private static final long serialVersionUID = 1L;
-double result;
+//public class HelloWorldServlet extends HttpServlet {
+//private static final long serialVersionUID = 1L;
+//double result;
  
-public HelloWorldServlet() {
-super();
+//public HelloWorldServlet() {
+//super();
 // TODO Auto-generated constructor stub
-}
+//}
  
-protected void doGet(HttpServletRequest request,
-HttpServletResponse response) throws ServletException, IOException {
+//protected void doGet(HttpServletRequest request,
+//HttpServletResponse response) throws ServletException, IOException {
 // TODO Auto-generated method stub
  
-}
+//}
  
-protected void doPost(HttpServletRequest request,
-HttpServletResponse response) throws ServletException, IOException {
+//protected void doPost(HttpServletRequest request,
+//HttpServletResponse response) throws ServletException, IOException {
  
-String valueString = request.getParameter("value");
-String resultString = request.getParameter("result");
+//String valueString = request.getParameter("value");
+//String resultString = request.getParameter("result");
  
-double result = 0;
-if (!resultString.isEmpty()) {
-result = Double.parseDouble(resultString);
-}
+//double result = 0;
+//if (!resultString.isEmpty()) {
+//result = Double.parseDouble(resultString);
+//}
  
-if (!valueString.isEmpty()) {
+//if (!valueString.isEmpty()) {
  
-double value = Double.parseDouble(valueString);
+//double value = Double.parseDouble(valueString);
  
-Map parameters = request.getParameterMap();
-if (parameters.containsKey("plus")) {
-result += value;
-} else if (parameters.containsKey("minus")) {
-result -= value;
-} else if (parameters.containsKey("divide")) {
-result /= value;
-} else if (parameters.containsKey("multiply")) {
-result *= value;
-}
+//Map parameters = request.getParameterMap();
+//if (parameters.containsKey("plus")) {
+//result += value;
+//} else if (parameters.containsKey("minus")) {
+//result -= value;
+//} else if (parameters.containsKey("divide")) {
+//result /= value;
+//} else if (parameters.containsKey("multiply")) {
+//result *= value;
+//}
  
-request.setAttribute("value", result);
+//request.setAttribute("value", result);
  
-RequestDispatcher view = request.getRequestDispatcher("/calc.jsp");
-view.forward(request, response);
+//RequestDispatcher view = request.getRequestDispatcher("/calc.jsp");
+//view.forward(request, response);
  
-}else {
+//}else {
  
-RequestDispatcher view = request.getRequestDispatcher("/calc.jsp");
-view.forward(request, response);
+//RequestDispatcher view = request.getRequestDispatcher("/calc.jsp");
+//view.forward(request, response);
  
-}
-}
-}
+//}
+//}
+//}
+//calculator end
