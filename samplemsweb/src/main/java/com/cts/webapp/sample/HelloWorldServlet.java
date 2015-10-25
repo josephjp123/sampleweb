@@ -1,4 +1,4 @@
-//package com.cts.webapp.sample;
+package com.cts.webapp.sample;
 
 //import java.io.IOException;
 //import java.io.PrintWriter;
@@ -23,7 +23,7 @@
 //		out.close();	}
 //}
 
-package de.duckout.servlet;
+//package de.duckout.servlet;
 import java.io.IOException;
 import java.util.Map;
  
@@ -37,12 +37,12 @@ import javax.servlet.http.HttpServletResponse;
 /**
 * Servlet implementation class Calculator
 */
-@WebServlet("/Calculator")
-public class Calculator extends HttpServlet {
+@WebServlet("/HelloWorldServlet")
+public class HelloWorldServlet extends HttpServlet {
 private static final long serialVersionUID = 1L;
 double result;
  
-public Calculator() {
+public HelloWorldServlet() {
 super();
 // TODO Auto-generated constructor stub
 }
