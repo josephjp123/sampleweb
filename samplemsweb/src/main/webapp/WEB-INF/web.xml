@@ -23,7 +23,7 @@
 
     <servlet-mapping>
         <servlet-name>calc</servlet-name>
-        <url-pattern>calc.jsp</url-pattern>
+        <url-pattern>/calc.jsp</url-pattern>
     </servlet-mapping>
   
 </web-app>
